@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% if conversion_status %}
+<div class="alert alert-success" style="margin-top: 5px">
+    <p>Mail was sent to {{ rec }}</p>
+    <p>Receipant Name : {{ username }}</p>
+</div>
+{% endif %}
+{% endblock %}

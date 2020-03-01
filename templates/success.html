@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% load qr_code %}
+
+{% if conversion_status %}
+<div class="alert alert-success" style="margin-top: 5px">
+    <p>QR Code is generated successfull.</p>
+    <p>Recipant Name: {{ filename }}</p>
+</div>
+{% endif %}
+
+{% if conversion_status %}
+{% qr_from_text data size="s" image_format="png" error_correction="L" %}
+{% endif %}
+
+{% endblock %}
+
