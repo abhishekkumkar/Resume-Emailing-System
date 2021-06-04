@@ -1,6 +1,6 @@
 asgiref==3.2.3
 colorama==0.4.3
-Django==3.0.3
+Django==3.1.9
 django-qr-code==1.1.0
 Pillow==7.0.0
 pytz==2019.3
